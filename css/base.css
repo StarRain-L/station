@@ -1,0 +1,110 @@
+
+/*reset css 重置样式*/
+*,
+::before,
+::after{
+	margin: 0;
+	padding: 0;
+	/*清除移动端默认的 点击高亮效果*/
+	-webkit-tap-highlight-color: transparent;
+	/*所有的都是以边框开始计算宽度 百分比*/
+	-webkit-box-sizing: border-box;
+	/*box-sizing: 0;*/
+}
+body{
+	font-size: 14px;
+	font-family: "microsoft yahei",sans-serif;  /*设备默认字体*/
+	color: #333;
+	background: #F9F9F9;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+/*重置input的样式*/
+input{
+	border: none;
+	outline: none;
+	/*清除移动端默认的表单样式*/
+	-webkit-appearance: none;
+
+}
+
+/*common 公用CSS样式*/
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.m_l10{
+	margin-left: 10px;
+}
+.m_r10{
+	margin-right: 10px;
+}
+.m_b10{
+	margin-bottom: 10px;
+}
+.m_t10{
+	margin-top: 10px;
+}
+.line{
+	height: 0.7px;
+	background-color: #E0E1E3;
+}
+.line_l10{
+	height: 1px;
+	width: 365px;
+	background-color: #E0E1E3;
+	margin-left: 10px;
+}
+.line_l40{
+	height: 0.7px;
+	width: 335px;
+	background-color: #E0E1E3;
+	margin-left: 40px;
+
+}
+.letterspace{
+	letter-spacing: 2px;
+}
+
+/*超出范围..*/
+.labeloverflow{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.fontsize_13{
+	font-size: 13px;
+}
+.fontcolor1{
+	color: #586680;
+}
+.fontcolor2{
+	color: #FC8331;
+}
+.fontcolor3{
+	color:  #adaeb0;
+}
+.emfontcolor4{
+	color: red;
+	font-size: 9px;
+}

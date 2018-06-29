@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>screening</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <link type="text/css" rel="stylesheet" href="css/demo.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="">
+    <!--车站选择-->
+    <div id="station" class="h_station">
+        <div class="s_stationCon">
+            <!--攻略-->
+            <div class="s_sousuo">
+                <input id="s_sousuo_text" class="input_text" type="text" value="" placeholder="输入名称搜索车站(如北京、bj、beijing)">
+                <input id="s_sousuo_cancel" class="input_btn" type="button" value="取消">
+            </div>
+            <div class="stationList">
+                <div class="station-lins">
+                    <div  class="station-lins-tit">当前</div>
+                    <ul>
+                        <li class="positioning li">定位中...</li>
+                    </ul>
+                    <div id="searchHistory" class="searchHistory">
+                        <div class="station-lins-tit">搜索历史</div>
+                        <ul>
+                            <li class="li">北京</li>
+                            <li class="li">上海</li>
+                            <li class="li">广州</li>
+                            <li class="li">深圳</li>
+                            <li class="li">西安</li>
+                            <li class="li">成都</li>
+                        </ul>
+                    </div>
+                    <div id="hotcitys">
+                        <div class="station-lins-tit">热门站点</div>
+                        <ul>
+                            <li class="li">北京</li>
+                            <li class="li">上海</li>
+                            <li class="li">广州</li>
+                            <li class="li">深圳</li>
+                            <li class="li">西安</li>
+                            <li class="li">成都</li>
+                            <li class="li">杭州</li>
+                            <li class="li">南京</li>
+                            <li class="li">郑州</li>
+                            <li class="li">武汉</li>
+                            <li class="li">长沙</li>
+                            <li class="li">厦门</li>
+                        </ul>
+                    </div>
+                    <div id="allcitys" class="allcitys">
+                        <div class="station-lins-tit">A</div>
+                        <ul>
+                        <li><b>安徽</b><span>anhui</span></li>
+                        <li><b>安阳</b><span>anyang</span></li>
+                        <li><b>安庆</b><span>anqing</span></li>
+                        <li><b>安山</b><span>anshan</span></li>
+                        <li><b>阿木尔</b><span>amuer</span></li>
+                        </ul>
+                        <div class="station-lins-tit">B</div>
+                        <ul>
+                        <li><b>北京西</b><span>beijingxi</span></li>
+                        <li><b>北京南</b><span>beijingnan</span></li>
+                        <li><b>宝鸡</b><span>baoji</span></li>
+                        </ul>
+                        <div class="station-lins-tit">C</div>
+                        <ul>
+                        <li>赤峰</li>
+                        <li>昌平</li>
+                        </ul>
+                        <div class="station-lins-tit">D</div>
+                        <ul>
+                        <li><b>东莞</b><span>dongguan</span></li>
+                        <li><b>大连</b><span>dalian</span></li>
+                        </ul>
+                        <div class="station-lins-tit">E</div>
+                        <ul>
+                        <li><b>恩施</b><span>enshi</span></li>
+                        <li><b>二连</b><span>二连</span></li>
+                        </ul>
+                        <div class="station-lins-tit">F</div>
+                        <ul>
+                        <li><b>阜阳</b><span>fuyang</span></li>
+                        <li><b>抚顺北</b><span>fushunbei</span></li>
+                        </ul>
+                        <div class="station-lins-tit">G</div>
+                        <ul>
+                        <li><b>桂林</b><span>guilin</span></li>
+                        <li><b>固始</b><span>gushi</span></li>
+                        <li><b>广州</b><span>guangzhou</span></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="station-right-div">
+                    <table class="station-right" >
+                        <!--<tr>-->
+                        <!--<td>热</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>A</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>B</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>C</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>D</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>E</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>F</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>G</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>H</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>I</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>J</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>K</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>L</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>M</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>N</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>O</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>P</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Q</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>R</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>S</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>T</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>U</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>V</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>W</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>X</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Y</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Z</td>-->
+                        <!--</tr>-->
+                    </table>
+                </div>
+                <div class="loaddata"><div>#</div></div>
+                <!--<div class="h_footer footer">-->
+                <!--<div id="s_cancelBtn" class="h_tabbar s_tabbarL f_left">-->
+                <!--<span>取消</span>-->
+                <!--</div>-->
+                <!--<div  id="s_sureTime" class="h_tabbar s_tabbarR f_right">-->
+                <!--<span>确定</span>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+        <!--搜索显示的列表-->
+        <div class="searchBg searchList">
+            <ul>
+                <!--<li>北京111111</li>-->
+                <!--<li>安徽</li>-->
+                <!--<li>安阳</li>-->
+                <!--<li>安庆</li>-->
+                <!--<li>鞍山</li>-->
+                <!--<li>安陆</li>-->
+                <!--<li>阿木尔</li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/demo.js"></script>
+</body>
+</html>
